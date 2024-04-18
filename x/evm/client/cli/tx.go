@@ -31,6 +31,8 @@ import (
 	"github.com/evmos/ethermint/x/evm/types"
 )
 
+const flagEVMPayer = "evm-payer"
+
 // GetTxCmd returns the transaction commands for this module
 func GetTxCmd() *cobra.Command {
 	cmd := &cobra.Command{
@@ -122,5 +124,6 @@ func NewRawTxCmd() *cobra.Command {
 	}
 
 	flags.AddTxFlagsToCmd(cmd)
+	cmd.Flags().String(flagEVMPayer, "", "Evm FeeGrant Account")
 	return cmd
 }

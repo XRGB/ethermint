@@ -35,6 +35,12 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 # Changelog
 
+## [v0.22.0-xrgb-1]
+
+### State Machine Breaking
+
+- (deps) Bump Cosmos-SDK to v0.47.3, Tendermint to CometBFT v0.37.1
+
 ## [v0.22.0] - 2023-04-12
 
 ### State Machine Breaking
